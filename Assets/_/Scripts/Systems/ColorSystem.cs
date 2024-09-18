@@ -63,7 +63,7 @@ partial struct ColorSystem : ISystem
                 math.lerp(_colorComponentData.color1.y, _colorComponentData.color2.y, alpha),
                 math.lerp(_colorComponentData.color1.z, _colorComponentData.color2.z, alpha),
                 math.lerp(_colorComponentData.color1.w, _colorComponentData.color2.w, alpha));
-            _material.Value = color;
+            _material.Value = color * 5;
         }
     }
 }
